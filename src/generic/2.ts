@@ -23,4 +23,4 @@ function compare<T extends AllType, U extends AllType>(
   };
 }
 
-export { compare };
+export {};

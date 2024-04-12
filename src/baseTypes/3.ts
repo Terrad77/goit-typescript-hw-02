@@ -1,6 +1,11 @@
 let some: unknown;
 some = "Text";
 let str: string;
-str = some as string; // узагальнення типів
+
+if (typeof some === "string") {
+  str = some;
+} else {
+  console.error("Значення не є рядком.");
+}
 
 export {};
